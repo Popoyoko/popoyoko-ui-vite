@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(),
     // ajoutez le plugin copy et configurez-le pour copier le fichier package.json
     copy({
-      targets: [{ src: "package.json", dest: "dist" },{ src: 'src/components/**/*', dest: 'dist/' }],
+      targets: [{ src: "package.json", dest: "library" },{ src: 'src/components/**/*', dest: 'library' }],
       flatten: false,
       // verbose: true, voir toit les fichier traités oar fast-glob dans la console
       hook: "writeBundle" // exécutez la copie après la génération des fichiers
@@ -15,7 +15,7 @@ export default defineConfig({
   ],
   
   build: {
-    outDir: "dist",
+    outDir: "library",
     sourcemap: true,
     //vider le répertoire de sortie avant de générer
     emptyOutDir: true,
