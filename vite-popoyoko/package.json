@@ -1,0 +1,24 @@
+{
+  "name": "linter-config",
+  "version": "1.0.0",
+  "description": "Here is all the configurations for linter and formatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Popoyoko/linter-config.git"
+  },
+  "keywords": [
+    "linter",
+    "formater",
+    "eslint"
+  ],
+  "author": "Popoyoko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Popoyoko/linter-config/issues"
+  },
+  "homepage": "https://github.com/Popoyoko/linter-config#readme"
+}
