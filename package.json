@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "main": "library/index.js",
-  "files": [
-    "library"
-  ],
+  
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
