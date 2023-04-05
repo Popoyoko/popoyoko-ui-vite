@@ -14,7 +14,12 @@ export default defineConfig({
       // verbose: true, voir toit les fichier traités oar fast-glob dans la console
       hook: "writeBundle" // exécutez la copie après la génération des fichiers
     }),
-    dts(),
+    dts({
+      // Spécification des chemins d'entrée pour les fichiers .ts
+      include: 'src/components/**/*.{ts,tsx}',
+      // Spécification du nom de fichier de sortie pour les fichiers .d.ts
+      outputDir: 'library/types'
+    }),
   ],
   
   build: {
@@ -39,4 +44,5 @@ export default defineConfig({
       formats: ["es"]
     }
   },
+  
 });
