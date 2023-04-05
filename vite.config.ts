@@ -20,7 +20,7 @@ export default defineConfig({
     //vider le répertoire de sortie avant de générer
     emptyOutDir: true,
     rollupOptions: {
-      input: "./src/index.ts",
+      input: "./src/components/index.ts",
       output: {
         // nom des fichiers générés pour les points d'entrée
         entryFileNames: "[name].js",

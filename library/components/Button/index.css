@@ -1,30 +1,191 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+.background-primary-disabled {
+  background-color: hsla(234deg, 85%, 55%, 0.15);
+  color: hsla(234deg, 100%, 50%, 0.15);
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+.background-primary-dimmed {
+  background-color: hsla(234deg, 85%, 55%, 0.6);
+  color: azeaze;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+.background-primary-default {
+  background-color: hsla(234deg, 85%, 55%, 0.75);
+  color: azeaze;
 }
-.storybook-button--small {
+.background-primary-contrasted {
+  background-color: hsla(234deg, 85%, 55%, 0.9);
+  color: azeaze;
+}
+.background-secondary-disabled {
+  background-color: hsla(30deg, 85%, 55%, 0.15);
+  color: hsla(30deg, 100%, 50%, 0.15);
+}
+.background-secondary-dimmed {
+  background-color: hsla(30deg, 85%, 55%, 0.6);
+  color: azeaze;
+}
+.background-secondary-default {
+  background-color: hsla(30deg, 85%, 55%, 0.75);
+  color: azeaze;
+}
+.background-secondary-contrasted {
+  background-color: hsla(30deg, 85%, 55%, 0.9);
+  color: azeaze;
+}
+
+.theme-dark {
+  background-color: hsl(234deg, 100%, 5%);
+  color: hsl(234deg, 100%, 95%);
+}
+
+.theme-light {
+  background-color: hsl(234deg, 100%, 95%);
+  color: hsl(234deg, 100%, 5%);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: roboto, sans-serif;
+}
+body:first-child {
+  margin-left: 0;
+}
+body:last-child {
+  margin-right: 0;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100%;
+}
+body #root:first-child {
+  margin-left: 0;
+}
+body #root:last-child {
+  margin-right: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: black;
+  font-size: 20px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+label {
   font-size: 12px;
-  padding: 10px 16px;
+  font-weight: medium;
+  text-transform: capitalize;
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
+
+a {
+  cursor: pointer;
 }
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+a:hover {
+  text-decoration: underline;
 }
+
+button {
+  background-color: hsla(234deg, 90%, 50%, 0.9);
+  padding: 0 16px;
+  font-weight: 600;
+  height: 36px;
+  color: hsl(234deg, 100%, 90%);
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 8px 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  appearance: none;
+  border: none;
+  transition: all 0.2s cubic-bezier(0.815, 0.525, 0.425, 1.18);
+  border: 2px solid transparent;
+  text-align: center;
+}
+button:first-child {
+  margin-left: 0;
+}
+button:last-child {
+  margin-right: 0;
+}
+button:hover {
+  background-color: hsl(234deg, 100%, 90%);
+  color: hsla(234deg, 90%, 20%, 0.9);
+  padding-bottom: 2px;
+  border: 2px solid hsl(234deg, 100%, 90%);
+}
+button.secondary {
+  background-color: transparent;
+  font-weight: 400;
+  color: hsl(234deg, 100%, 90%);
+  font-weight: 600;
+  border: 2px solid hsl(234deg, 100%, 90%);
+}
+button.secondary:hover {
+  background-color: hsl(234deg, 100%, 90%);
+  color: hsla(234deg, 90%, 20%, 0.9);
+  border-color: rgba(204, 209, 255, 0.4);
+}
+button.tertiary {
+  background-color: transparent;
+  font-weight: 400;
+  color: hsl(234deg, 100%, 90%);
+  font-weight: 600;
+  border: 0px solid hsl(234deg, 100%, 90%);
+}
+button.play {
+  position: relative;
+  border-radius: 50%;
+}
+button.play::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: calc(50% + 2px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 14px;
+  border-color: transparent transparent transparent hsl(234deg, 100%, 90%);
+}
+button.play:hover::after {
+  border-color: transparent transparent transparent hsla(234deg, 90%, 50%, 0.9);
+}
+button.stop {
+  position: relative;
+  border-radius: 50%;
+}
+button.stop::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 16px;
+  border: 4px solid hsl(234deg, 100%, 90%);
+  box-sizing: border-box;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+button.stop:hover::after {
+  border-color: hsla(234deg, 90%, 50%, 0.9);
+}
+
+/*# sourceMappingURL=index.css.map */
