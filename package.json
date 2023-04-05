@@ -1,9 +1,12 @@
 {
   "name": "vite-popoyoko",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "main": "popoyoko-ui-vite.ts",
+  "main": "library/index.js",
+  "files": [
+    "library"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

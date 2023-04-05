@@ -1,5 +1,1 @@
-import { Button } from './src/components';
-
-module.exports = {
-    Button: Button,
-}
+export { Button } from "./src/components";
