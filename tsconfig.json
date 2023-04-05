@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./library",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -14,8 +15,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "strictNullChecks": true, 
+    "sourceMap": true
   },
-  "include": ["src", "storybook", ".storybook/main.cjs"],
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "storybook-static",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

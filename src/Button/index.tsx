@@ -7,7 +7,7 @@ interface ButtonProps {
   size?: "small" | "medium" | "large";
   label: string;
   onClick?: () => void;
-}
+};
 
 /**
  * Primary UI component for user interaction
