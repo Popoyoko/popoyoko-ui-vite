@@ -1,0 +1,46 @@
+svg {
+    position: absolute;
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    color:#32568F;
+}
+
+
+.icon-small {
+    width: 16px;
+    height: 16px;
+    background-color: gray; /* to test if icon divs works */
+}
+
+.icon-small svg {
+    height: 8px;
+    width: 8px;
+}
+
+
+.icon-medium {
+    width: 24px;
+    height: 24px;
+    background-color: gray; /* to test if icon divs works */
+}
+
+.icon-medium svg {
+    height: 16px;
+    width: 16px;
+}
+
+
+.icon-large {
+    width: 32px;
+    height: 32px;
+    background-color: gray; /* to test if icon divs works */
+}
+
+.icon-large svg {
+    height: 24px;
+    width: 24px;
+}
+
