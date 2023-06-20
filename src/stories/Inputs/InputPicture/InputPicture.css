@@ -1,0 +1,15 @@
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+
+    width: 326px;
+    height: 54px;
+
+    background: #F7F7F8;
+    border: 2px dashed #171673;
+    border-radius: 2px;
+}

@@ -1,6 +1,6 @@
 import "./Section.css";
 import React from "react";
-import section from "../../assets/section.svg";
+// import section from "../../assets/section.svg";
 
 interface SectionProps {
   title?: string;
