@@ -7,7 +7,6 @@ const meta: Meta<typeof InputSearch> = {
   component: InputSearch,
   argTypes: {
     placeholder: { control: "text" },
-    srcIcon: { control: "text" },
   },
 };
 
@@ -18,6 +17,5 @@ export const primary: Story = {
   render: (args) => <InputSearch {...args} />,
   args: {
     placeholder: "Hypnose, massages, magnétiseur...",
-    srcIcon: "",
   },
 };

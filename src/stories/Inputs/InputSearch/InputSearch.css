@@ -1,31 +1,32 @@
-.placeholder {
+.search {
+    /* Style pour conteneur 'search' on siat jamais*/
+  }
+  
+  .input-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 4px;
-    
+    align-items: center;
     width: 326px;
     height: 72px;
-    
     background: #F7F7F8;
     border: 2px solid #0F082B;
     border-radius: 4px;
-
+    padding: 12px;
+  }
+  
+  .placeholder {
+    flex: 1;
+    border: none;
+    background: none;
     font-family: 'Co Headline';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #0F082B;
-}
 
-.vector {
-    position: absolute;
-    left: 4.29px;
-    right: 4px;
-    top: 4px;
-    bottom: 4.29px;
+    /* outline: none; */
+  }
 
-}
+  .placeholder:focus{
+    outline: none;
+  }

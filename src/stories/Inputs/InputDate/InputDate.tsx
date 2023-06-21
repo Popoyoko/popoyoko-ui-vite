@@ -1,5 +1,6 @@
 import './InputDate.css';
 import React from 'react';
+import DateLine from '../../../Icons/DateLine/dateLine.svg';
 
 interface InputDateProps {
     placeholder: string;
@@ -14,8 +15,8 @@ export const InputDate = ({
 }: InputDateProps) => {
     return (
         <button className='dateBtn' onClick={onClick}>
-            <p className='placeholder'>{placeholder}</p>
-            <svg className='vector' href={srcIcon}></svg>
+            {placeholder}
+            <img src={DateLine} alt='dateFlat'></img>
         </button>
     );
 }

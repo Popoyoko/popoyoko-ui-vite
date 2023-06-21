@@ -1,14 +1,13 @@
 import './InputSearch.css';
 import React from 'react';
+import search from '../../../Icons/Search/search.svg';
 
 interface InputSearchProps {
     placeholder: string;
-    srcIcon: string;
 };
 
 export const InputSearch = ({
     placeholder,
-    srcIcon,
 }: InputSearchProps) => {
 
     const handleSearch = (event) => {
@@ -20,9 +19,11 @@ export const InputSearch = ({
       };
     
     return (
-        <div>
-            <input type='text' className='placeholder' placeholder={placeholder} onKeyDown={handleSearch}></input>
-            <svg href={srcIcon} className='vector'></svg>
+        <div className='search'>
+            <div className='input-container'>
+                <input type='text' className='placeholder' placeholder={placeholder} onKeyDown={handleSearch} />
+                <img src={search} alt='search'></img>
+            </div>
         </div>
     )
 }

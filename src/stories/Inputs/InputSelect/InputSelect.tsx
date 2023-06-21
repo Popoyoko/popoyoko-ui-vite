@@ -1,5 +1,6 @@
 import './InputSelect.css';
 import React from 'react';
+import arrowtriangle from '../../../Icons/ArrowTriangle/triangle.svg';
 
 interface InputSelectProps {
     label: string;
@@ -16,7 +17,10 @@ export const InputSelect = ({
 }: InputSelectProps) => {
     return(
         <div className="select">
-            <button className="selectbtn">{label}</button>
+            <button className="selectbtn">
+                {label}
+                <img src={arrowtriangle} alt='arrowtriangle'></img>
+            </button>
             <div className="select-content">
             {anchorElement}
             {options.map((option, index) => (
