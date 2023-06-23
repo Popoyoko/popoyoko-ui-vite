@@ -1,4 +1,4 @@
-import "./index.css";
+import "./index.scss";
 import React from "react";
 
 interface SmallProps {
@@ -24,4 +24,3 @@ export const Small = ({ showbadge, background }: SmallProps) => {
     </div>
   );
 };
-
